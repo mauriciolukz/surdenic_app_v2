@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_report"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.CobroActivity"
+android:background="@color/backgroundApp"
+android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_cobro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.MyApp.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/Widget.MyApp.Toolbar.Solid">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cobro"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:letterSpacing="0.1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/toolbar_title_cobro" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/cobro_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_main_cobro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_header_cobro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/pic_factura"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cobro_cliente_contacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"/>
+
+                    <TextView
+                        android:id="@+id/cobro_cliente_cedula"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cliente_cedula"/>
+
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/card_background" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cliente_codigo_cliente_txt"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@color/card_background"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/cliente_codigo"/>
+
+                        <TextView
+                            android:id="@+id/cliente_codigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cliente_tipo_txt"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cliente_tipo"/>
+
+                        <TextView
+                            android:id="@+id/cobro_cliente_tipo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_normal"
+                            android:textColor="@android:color/white"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/layout_cobro_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_cobro_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/card_background"
+                android:text="@string/cobro_titulo_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobro_num_tipo_documento_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_tipo_documento"/>
+
+                    <TextView
+                        android:id="@+id/cobro_tipo_documento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobro_num_factura_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/factura_numero"/>
+
+                    <TextView
+                        android:id="@+id/cobro_factura_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobro_monto_factura_txt"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_monto_factura"/>
+
+                    <TextView
+                        android:id="@+id/cobro_monto_factura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cobro_forma_pago"
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/cobro_forma_pago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/cobro_monto_abonado" />
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cobro_monto_nio"
+                            />
+
+                        <EditText
+                            android:id="@+id/cobro_monto_nio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:hint="@string/default_cero_value"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:nextFocusDown="@+id/cobro_monto_usd"
+                            android:textColor="@color/logoColor"
+                            android:textColorHint="@color/logoColor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cobro_monto_usd"
+                            />
+
+                        <EditText
+                            android:id="@+id/cobro_monto_usd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:hint="@string/default_cero_value"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:nextFocusDown="@+id/cobro_monto_usd_nio"
+                            android:textColor="@color/logoColor"
+                            android:textColorHint="@color/logoColor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cobro_monto_usd_nio"
+                            />
+
+                        <EditText
+                            android:id="@+id/cobro_monto_usd_nio"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:textColor="@color/logoColor"
+                            android:textColorHint="@color/logoColor"
+                            android:enabled="false"
+                            android:hint="@string/default_cero_value"
+                            android:nextFocusDown="@+id/cobro_monto_abonado"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cobro_monto_abonado"
+                            />
+
+                        <EditText
+                            android:id="@+id/cobro_monto_abonado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:enabled="false"
+                            android:hint="@string/default_cero_value"
+                            android:inputType="numberDecimal"
+                            android:nextFocusDown="@+id/cobro_saldo_actual"
+                            android:textColor="@color/logoColor"
+                            android:textColorHint="@color/logoColor" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_saldo_actual"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_saldo_actual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/cobro_numero_recibo"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_numero_recibo"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_numero_recibo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:inputType="numberDecimal"
+                        android:maxWidth="5dp"
+                        android:maxLength="10"
+                        android:nextFocusDown="@+id/cobro_banco_emite"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cobro_cuenta_deposito"
+                    />
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/cobro_cuenta_deposito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:nextFocusDown="@+id/cobro_banco_emite"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_banco_emite"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_banco_emite"
+                        android:inputType="numberDecimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor"
+                        android:enabled="false"
+                        android:nextFocusDown="@+id/cobro_numero_cheque"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:id="@+id/title_cheque_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cobro_numero_cheque"
+                        android:textColor="@color/card_background" />
+
+                    <EditText
+                        android:id="@+id/cobro_numero_cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:inputType="numberDecimal"
+                        android:maxWidth="5dp"
+                        android:maxLength="10"
+                        android:nextFocusDown="@+id/cobro_fecha_emison_cheque"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:id="@+id/txt_fecha_emision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cobro_fecha_emision"
+                        android:textColor="@color/card_background" />
+
+                    <EditText
+                        android:id="@+id/cobro_fecha_emison_cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date"
+                        android:nextFocusDown="@+id/cobro_fecha_cobro_cheque"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_fecha_cobro_cheque"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_fecha_cobro_cheque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date"
+                        android:nextFocusDown="@+id/cobro_no_retencion_IR"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Retentcion IR-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cobro_retencion_ir"
+                    />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/cobro_retencion_IR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/cobro_no_retencion_IR"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_retencion_ir_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonIRClicked"
+                        android:text="@string/messages_send_data_positive"
+                        android:textColor="@color/logoColor" />
+                    <RadioButton android:id="@+id/radio_retencion_ir_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/logoColor"
+                        android:checked="true"
+                        android:text="@string/messages_send_data_negative"
+                        android:onClick="onRadioButtonIRClicked"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <!-- fin: Retencion IR -->
+
+            <!-- Datos Retencion IR-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_no_retencion_ir"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_no_retencion_IR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/cobro_valor_retencion_IR"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_valor_retencion_ir"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_valor_retencion_IR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:enabled="false"
+                        android:hint="@string/default_cero_value"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/cobro_no_retencion_IMI"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- fin: Datos Retencion IR-->
+
+            <!-- Retentcion IMI-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cobro_retencion_imi"
+                    />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_retencion_imi_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonIMIClicked"
+                        android:text="@string/messages_send_data_positive"
+                        android:textColor="@color/logoColor" />
+                    <RadioButton android:id="@+id/radio_retencion_imi_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/logoColor"
+                        android:checked="true"
+                        android:text="@string/messages_send_data_negative"
+                        android:onClick="onRadioButtonIMIClicked"
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <!-- fin: Retencion IMI -->
+
+            <!-- Datos Retencion IMI-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_no_retencion_imi"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_no_retencion_IMI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/cobro_valor_retencion_IMI"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobro_valor_retencion_imi"
+                        />
+
+                    <EditText
+                        android:id="@+id/cobro_valor_retencion_IMI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:enabled="false"
+                        android:hint="@string/default_cero_value"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/cobro_efectivo_recibido"
+                        android:textColor="@color/logoColor"
+                        android:textColorHint="@color/logoColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- fin: Datos Retencion IMI-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight=".50"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/card_background"
+                            android:text="@string/cobro_efectivo_recibido"
+                            />
+                        <!-- aqui -->
+
+                        <EditText
+                            android:id="@+id/cobro_efectivo_recibido"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:textColor="@color/logoColor"
+                            android:textColorHint="@color/logoColor"
+                            android:enabled="false"
+                            android:hint="@string/default_cero_value"
+                            android:nextFocusDown="@+id/button_guardar_cobro"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight=".50"
+                        android:layout_marginTop="5dp"/>
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/button_guardar_cobro"
+                style="?android:textAppearanceSmall"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:text="@string/boton_guardar"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

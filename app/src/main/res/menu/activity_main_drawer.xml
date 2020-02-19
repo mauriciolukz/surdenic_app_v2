@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_ruta"
+            android:icon="@drawable/ic_ruta"
+            android:title="@string/nav_inicio_ruta" />
+
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_customer"
+            android:title="@string/nav_cliente" />
+
+        <item
+            android:id="@+id/nav_facturas"
+            android:icon="@drawable/ic_bill"
+            android:title="@string/nav_facturas" />
+
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@drawable/ic_products"
+            android:title="@string/nav_producto" />
+
+        <item
+            android:id="@+id/nav_sincronizacion"
+            android:icon="@drawable/ic_sync"
+            android:title="@string/nav_sincronizacion" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_configuracion"-->
+            <!--android:icon="@drawable/ic_configuracion"-->
+            <!--android:title="@string/nav_configuracion" />-->
+
+        <item
+            android:id="@+id/nav_acerca"
+            android:icon="@drawable/ic_acerca"
+            android:title="@string/nav_acerca" />
+
+
+    </group>
+
+</menu>

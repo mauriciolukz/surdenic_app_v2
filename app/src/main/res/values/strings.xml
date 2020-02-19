@@ -1,0 +1,393 @@
+<resources>
+    <string name="app_name">Surdenic</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">El password es incorrecto</string>
+    <string name="error_field_required">El campo es requerido</string>
+    <string name="login_failed">El usuario o la contraseña son inválidos!</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <!-- start: menu -->
+    <string name="nav_inicio_ruta">Inicio Ruta</string>
+    <string name="nav_cliente">Clientes</string>
+    <string name="nav_facturas">Facturas</string>
+    <string name="nav_sincronizacion">Sincronización</string>
+    <string name="nav_configuracion">Configuración</string>
+    <string name="nav_acerca">Acerca de</string>
+    <string name="nav_info_ruta">Información Ruta</string>
+    <string name="nav_producto">Productos</string>
+
+    <!-- end: menu -->
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Inicio Ruta</item>
+        <item>Clientes</item>
+        <item>Facturas</item>
+        <item>Productos</item>
+        <item>Sincronización</item>
+        <!--<item>Configuración</item> -->
+        <item>Acerca de</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="action_search">Buscar</string>
+    <string name="action_refresh">Refrescar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="connection_failed">Favor revise su conexión a Internet.</string>
+
+    <!-- Strings fragments Rutas -->
+    <string name="btn_inicia_ruta">Iniciar Ruta</string>
+    <string name="carga_clientes">Clientes</string>
+    <string name="carga_facturas">Facturas</string>
+    <string name="carga_catalogos">Catálogos</string>
+    <string name="carga_parametros">Parámetros</string>
+    <string name="carga_descuentos">Cartelera</string>
+
+
+    <string name="error_descarga_clientes">Error en descarga de clientes</string>
+    <string name="error_descarga_facturas">Error en descarga de facturas</string>
+    <string name="error_descarga_departamentos">Error en descarga de departamentos</string>
+    <string name="error_descarga_municipios">Error en descarga de municipios</string>
+    <string name="error_descarga_canales_distribucion">Error en descarga de canales de distribución</string>
+    <string name="error_descarga_fuerza_venta">Error en descarga de fuerzas de venta</string>
+    <string name="error_descarga_rutas_trabajo">Error en descarga de rutas de trabajo</string>
+    <string name="error_descarga_tipos_pago">Error en descarga de tipos de pagos</string>
+    <string name="error_descarga_maestro_precios">Error en descarga de maestro de precios</string>
+    <string name="error_descarga_parametros">Error en descarga de parámetros App</string>
+    <string name="error_descarga_productos">Error en descarga de productos</string>
+
+    <!-- String array razon visita no exitosa-->
+    <string-array name="razon_visita_no_exitosa">
+        <item>No visitó por falta de tiempo</item>
+        <item>El cliente o Encargado no se encontraba</item>
+        <item>El cliente no podía recibir</item>
+        <item>Cliente cerrado temporalmente</item>
+        <item>Cliente cerrado definitivamente</item>
+        <item>Cliente no existe</item>
+        <item>Cliente no realizó pedido</item>
+        <item>Otro motivo</item>
+    </string-array>
+
+    <!-- String array razon cobro no exitoso-->
+    <string-array name="razon_cobro_no_exitoso">
+        <item>El encargado de pago no se encontraba</item>
+        <item>El cliente no tiene dinero</item>
+        <item>El cliente no tiene chequera</item>
+        <item>Pendiente de bonificación o descuento</item>
+        <item>Pendiente nota de crédito</item>
+        <item>Pagará con transferencia</item>
+        <!--<item>Pagará cuando llegue el pedido</item>-->
+    <item>Otro motivo</item>
+</string-array>
+
+<string name="titulo_cliente">Cliente</string>
+<string name="titulo_factura">Factura</string>
+<string name="titulo_cobro">Registrar Cobro</string>
+<string name="titulo_pedido">Registrar Pedido</string>
+<string name="titulo_producto">Producto</string>
+
+
+<!-- Activity Cliente -->
+
+    <string name="cliente_cedula">Cédula:</string>
+    <string name="cliente_tipo">Tipo:</string>
+    <string name="cliente_codigo">Código:</string>
+    <string name="cliente_titulo_contaco">Información de Contacto</string>
+    <string name="cliente_empresa">Empresa:</string>
+    <string name="cliente_direccion">Dirección:</string>
+    <string name="cliente_barrio">Barrio:</string>
+    <string name="cliente_departamento">Departamento</string>
+    <string name="cliente_municipio">Municipio</string>
+    <string name="cliente_telefono">Teléfono:</string>
+    <string name="cliente_nombre">Cliente:</string>
+    <string name="cliente_negocio">Negocio:</string>
+
+    <string name="cliente_titulo_cuenta">Información de Cuenta</string>
+    <string name="cliente_limite_credito">Límite Crédito</string>
+    <string name="cliente_dias_credito">Días Crédito</string>
+    <string name="cliente_balance_actual">Balance Actual</string>
+    <string name="cliente_factor_incremento">Factor Incremento</string>
+
+    <string name="cliente_titulo_facturas">Facturas Actuales</string>
+
+    <string name="seleccion_razon">Seleccione razón:</string>
+    <string name="breve_descripcion">Breve descripción:</string>
+
+    <string name="registro_visita_no_exitosa">Visita no exitosa registrada con éxito.</string>
+    <string name="actualiza_registro_visita_no_exitosa">Visita no exitosa actualizada con éxito.</string>
+    <string name="elimina_registro_visita_no_exitosa">Visita no exitosa eliminada con éxito.</string>
+    <string name="registro_cobro_no_exitoso">Cobro no exitoso registrada con éxito.</string>
+    <string name="actualiza_registro_cobro_no_exitoso">Cobro no exitoso actualizado con éxito.</string>
+    <string name="elimina_registro_cobro_no_exitoso">Cobro no exitoso eliminada con éxito.</string>
+    <string name="registro_cobro">Cobro registrado con éxito.</string>
+    <string name="actualizo_cobro">Cobro actualizado con éxito.</string>
+
+    <string name="boton_actualizar">Actualizar</string>
+    <string name="boton_eliminar">Eliminar</string>
+
+    <string name="error_guardar_registro">Error al crear el registro.</string>
+    <!-- Sub-menus -->
+    <string name="sub_menu_visita_no_exitosa">Visita no exitosa</string>
+    <string name="sub_menu_pedido">Registrar Pedido</string>
+    <string name="sub_menu_cobro">Registrar cobro</string>
+    <string name="sub_menu_cobro_no_exitosa">Cobro no exitoso</string>
+    <string name="cantidad_producto_title">Producto Seleccionado</string>
+
+    <string name="sub_menu_cliente_todos">Todos</string>
+    <string name="sub_menu_cliente_sin_visitar">No sincronizados</string>
+    <string name="sub_menu_cliente_visitados">Sincronizados</string>
+
+    <string name="sub_menu_sincronizacion">Sincronizar todo</string>
+    <string name="sub_menu_descargar_inventario">Actualizar inventario</string>
+    <string name="sub_menu_descargar_cartelera">Actualizar cartelera e Inventario</string>
+    <string name="sub_menu_elimina_pedido">Eliminar</string>
+    <string name="sub_menu_negociacion_pedido">Negociación especial</string>
+
+
+    <!-- Activity Factura  -->
+    <string name="factura_numero">No. Factura: </string>
+    <string name="factura_titulo_info">Información Factura</string>
+    <string name="factura_fecha">Fecha Emisión:</string>
+    <string name="factura_fecha_vence">Fecha Vencimiento:</string>
+    <string name="factura_total_vendido">Monto Vendido:</string>
+    <string name="factura_monto_abonado">Monto Abonado:</string>
+    <string name="factura_monto_pc">Monto por Cobrar:</string>
+
+    <string name="factura_card_total_vendido">Facturado:</string>
+    <string name="factura_card_monto_abonado">Abonado:</string>
+    <string name="factura_card_monto_pc">Saldo:</string>
+
+
+    <!-- -->
+    <string name="boton_guardar">Guardar</string>
+    <string name="creada_por">Desarrollada por Jensoft</string>
+    <string name="boton_cantidad">Guardar</string>
+    <string name="digite_cantidad">Digite Cantidad</string>
+
+
+    <!-- Fragment Sincronizacion -->
+    <string name="sinc_visitas_no_exitosas">Sincronizar visitas no exitosas</string>
+    <string name="sinc_visitas_no_exitosas_desc">Enviar visitas no exitosas registradas</string>
+
+    <string name="sinc_cobros_no_exitosos">Sincronizar cobros no exitosos</string>
+    <string name="sinc_cobros_no_exitosos_desc">Enviar cobros no exitosos registrados</string>
+    <string name="sinc_cobros_exitosos">Sincronizar cobros exitosos</string>
+    <string name="sinc_cobros_exitosos_desc">Enviar cobros exitosos registrados</string>
+
+    <string name="sinc_pedidos">Sincronizar pedidos</string>
+    <string name="sinc_pedidos_desc">Enviar pedidos registrados</string>
+
+    <string name="alert_dilog_title_visitas_no_exitosas">Enviar visitas no exitosas</string>
+    <string name="alert_dilog_title_cobros_no_exitosos">Enviar cobros no exitosos</string>
+    <string name="alert_dilog_title_cobros">Enviar cobros</string>
+    <string name="alert_dilog_title_pedidos">Enviar pedidos</string>
+
+    <string name="alert_dialog_title_todos">Enviar todos</string>
+
+    <string name="messages_send_data">¿Está seguro que desea enviar la información al servidor?</string>
+    <string name="messages_send_data_positive">Si</string>
+    <string name="messages_send_data_negative">No</string>
+
+    <string name="progress_diaog_title_visitas_no_exitosas">Enviando visitas no exitosas</string>
+    <string name="visitas_no_exitosas_vacias">No hay visitas no exitosas registradas para envío</string>
+    <string name="visitas_no_exitosas_enviadas">Las visitas no exitosas se han enviado con éxito.</string>
+    <string name="progress_diaog_message">Envío en progreso</string>
+    <string name="progress_dialog_error">Error en el envío de la información</string>
+
+    <string name="progress_diaog_title_cobros_no_exitosas">Enviando cobros no exitosas</string>
+    <string name="cobros_no_exitosas_vacias">No hay cobros no exitosos registrados para envío</string>
+    <string name="cobross_no_exitosos_enviadas">Las cobros no exitosos se han enviado con éxito.</string>
+    <string name="progress_diaog_title_cobros_exitosos">Enviando cobros</string>
+    <string name="progress_diaog_title_pedidos_exitosos">Enviando pedidos</string>
+
+    <string name="progress_diaog_title_datos">Enviando información</string>
+
+    <string name="cobros_exitosos_enviados">Las cobros se han enviado con éxito.</string>
+
+    <string name="pedidos_exitosos_enviados">Los pedidos se han enviado con éxito.</string>
+
+    <string name="cobros_exitosos_vacias">No hay cobros registrados para envío</string>
+
+    <string name="pedidos_vacias">No hay pedidos registrados para envío</string>
+
+    <string name="informacion_enviada_exito">La información se ha enviado con éxito.</string>
+
+    <!-- -->
+
+
+    <string name="progress_diaog_title_descarga_ruta">Descargando información de ruta</string>
+    <string name="progress_diaog_message_download">Descarga en progreso</string>
+    <string name="progress_diaog_message_borrado">Borrado en progreso</string>
+
+    <string name="progress_diaog_title_actualiza_inventario">Descargando información de inventario</string>
+    <string name="progress_diaog_title_actualiza_cartelera">Descargando información de cartelera</string>
+    <string name="info_message_actualiza_inventario">Inventario de productos actualizado con éxito</string>
+
+    <string name="messages_descarga_ruta_completada">La información de la ruta se descargo con éxito.</string>
+
+    <string name="progress_diaog_title_eliminar_ruta">Eliminando información de ruta</string>
+    <string name="messages_borrado_ruta_completada">La información de la ruta se eliminó con éxito.</string>
+
+    <!-- Fragment info ruta -->
+    <string name="title_info_ruta_actual">Datos Ruta Actual</string>
+    <string name="title_ruta_datos_ingresado">Datos Recolectados</string>
+    <string name="fecha_hora_inicio_ruta">Fecha/Hora inicio:</string>
+    <string name="cantidad_clientes">Cantidad Clientes:</string>
+    <string name="cantidad_facturas">Cantidad Facturas:</string>
+    <string name="periodo_trabajo">Periodo Trabajo:</string>
+    <string name="tasa_cambio">Tasa de Cambio:</string>
+    <string name="retencion_ir">Retención IR</string>
+    <string name="retencion_imi">Retención IMI</string>
+    <string name="visitas_no_exitosas">Visitas no exitosas:</string>
+    <string name="visitas_no_exitosas_sincro">Sincronizadas:</string>
+    <string name="cobros_no_exitosos">Cobros no exitosos:</string>
+    <string name="cobros_no_exitosos_sincro">Sincronizados:</string>
+    <string name="cobros_exitosos">Cobros exitosos:</string>
+    <string name="pedidos">Pedidos:</string>
+    <string name="pedidos_sincro">Sincronizados: </string>
+
+
+    <string name="btn_finaliza_ruta">Finalizar Ruta</string>
+    <!-- -->
+
+    <!-- Activity Cobro -->
+    <string name="cobro_titulo_info">Información Cobro</string>
+    <string name="cobro_forma_pago">Forma de Pago</string>
+    <string name="cobro_monto_abonado">Monto abonado</string>
+    <string name="cobro_numero_recibo">No. Recibo</string>
+    <string name="cobro_cuenta_deposito">Cuenta deposito</string>
+    <string name="cobro_banco_emite">Banco emite</string>
+    <string name="cobro_numero_cheque">No. Cheque</string>
+    <string name="cobro_fecha_emision">Fecha emisión</string>
+    <string name="cobro_fecha_deposito">Fecha Deposito</string>
+    <string name="cobro_fecha_cobro_cheque">Fecha cobro cheque</string>
+    <string name="cobro_retencion_ir">¿Retención IR?</string>
+    <string name="cobro_no_retencion_ir">No. Retención IR</string>
+    <string name="cobro_valor_retencion_ir">Valor Retención IR</string>
+    <string name="cobro_retencion_imi">¿Retención IMI?</string>
+    <string name="cobro_no_retencion_imi">No. Retención IMI</string>
+    <string name="cobro_valor_retencion_imi">Valor Retención IMI</string>
+    <string name="cobro_tipo_documento">Tipo Documento: </string>
+    <string name="cobro_monto_factura">Monto por Cobrar:</string>
+
+    <string name="cliente_tipo_c">Contado</string>
+    <string name="cliente_tipo_p">Crédito</string>
+    <string name="cobro_monto_nio">Monto NIO</string>
+    <string name="cobro_monto_usd">Monto USD</string>
+    <string name="cobro_monto_usd_nio">Monto USD/NIO</string>
+    <string name="cobro_saldo_actual">Saldo Actual</string>
+    <string name="cobro_efectivo_recibido">Efectivo Recibido</string>
+    <string name="default_cero_value">0.00</string>
+
+    <!-- Activity Pedidos -->
+    <string name="pedido_titulo_datos">Datos Pedido</string>
+    <string name="pedido_fecha_venta">Fecha venta</string>
+    <string name="pedido_subtotal_venta">SubTotal:</string>
+    <string name="pedido_descuento_venta">Descuento:</string>
+    <string name="pedido_iva_venta">IVA:</string>
+    <string name="pedido_total_factura_venta">Total factura:</string>
+    <string name="pedido_fecha_vencimiento">Fecha vencimiento</string>
+    <string name="pedido_tasa_cambio">Tasa cambio:</string>
+    <string name="pedido_valor_dolares">Valor dólares:</string>
+    <string name="pedido_negociacion_especial">Negociación especial</string>
+    <string name="pedido_tipo_observacion">Observacion</string>
+    <string name="button_pedido_agregar_producto">Agregar producto</string>
+
+
+    <string name="detalle_pedido_codigo">Código</string>
+    <string name="detalle_pedido_producto">Descripcion de Producto</string>
+    <string name="detalle_pedido_cantidad">Cant.</string>
+    <string name="detalle_pedido_precio">Total</string>
+
+    <string name="es_pc_S">S</string>
+    <string name="es_pc_N">N</string>
+
+    <string name="codigo">Código:</string>
+    <string name="precio_producto">Precio:</string>
+    <string name="existencia_producto">Existencia:</string>
+    <string name="empaque_producto">Empaque:</string>
+    <string name="buscar_producto">Buscar producto</string>
+    <string name="moneda_nacional">C$</string>
+    <string name="moneda_dolar">U$</string>
+    <string name="cant_pedida_producto_selecc">Cant. Pedida:</string>
+    <string name="cant_vendida_producto_selecc">Cant. Vendida:</string>
+    <string name="subtotal_producto_selecc">Subtotal:</string>
+    <string name="subtotal_desc_producto_selecc">Subtotal:</string>
+    <string name="total_desc_producto_selecc">Total Desc.:</string>
+    <string name="total_iva_producto_selecc">Total I.V.A.:</string>
+    <string name="total_facturado_producto_selecc">Total:</string>
+    <string name="porcenatje_desc_producto_selecc">% Desc.:</string>
+
+
+
+    <string name="pedido_creado_exito">Pedido creado con éxito. Favor agregue los productos.</string>
+    <string name="pedido_existente">Ya tiene un pedido registrado. Puede actualizarlo.</string>
+    <string name="pedido_error">Error al crear el pedido.</string>
+    <string name="detalle_pedido_producto_exito">Producto agregado con éxito.</string>
+    <string name="detalle_pedido_producto_error">Error al agregar producto.</string>
+    <string name="string_detalle">Detalle:</string>
+    <string name="busqueda_producto_cantidad">Digite Cantidad</string>
+
+    <string name="alert_dilog_title_elimina_item_pedido">Eliminar item</string>
+    <string name="messages_eliminar_item_pedido">¿Está seguro que desea eliminar el item</string>
+
+    <string name="producto">Producto:</string>
+    <string name="producto_codigo">Código:</string>
+    <string name="producto_empaque">Empaque:</string>
+    <string name="producto_precio_venta">Precio venta:</string>
+    <string name="producto_saldo_actual">Saldo actual:</string>
+
+
+    <string name="alert_dilog_title_actualizar_inventario">Actualizar inventario y Cartelera</string>
+    <string name="alert_dilog_title_actualizar_cartelera">Actualizar cartelera</string>
+    <string name="messages_actualizar_inventario">¿Está seguro que desea actualizar el inventario de productos y Cartelera?</string>
+    <string name="messages_actualizar_cartelera">¿Está seguro que desea actualizar la cartelera de productos?</string>
+
+    <string name="cobro_existente">Ya tiene un cobro registrado. Puede actualizarlo.</string>
+    <string name="cobro_num_recibo_vacio">Numero de recibo vacio.</string>
+    <string name="cobro_num_abonado_vacio">No ha digitado el monto.</string>
+    <string name="cobro_num_doc_vacio">Numero de documento vacio.</string>
+    <string name="cobro_num_fecha_vacio">Fecha de emision vacio.</string>
+    <string name="cobro_num_fecha_emision_vacio">Fecha de cobro vacio.</string>
+    <string name="cobro_num_saldo_erroneo">Saldo no puede estar en negativo.</string>
+
+    <string name="cobro_no_existe">No hay cobro registrado para eliminar.</string>
+
+
+    <string name="cobro_no_retencion_IR_vacio">No retencion IR vacio.</string>
+    <string name="cobro_valor_retencion_IR_vacio">Valor de retencion IR vacio.</string>
+    <string name="cobro_no_retencion_IMI_vacio">No retencion IMI vacio.</string>
+    <string name="cobro_valor_retencion_IMI_vacio">Valor retencion IMI vacio.</string>
+
+
+    <string name="alert_dilog_title_eliminar_cobro">Eliminar cobro</string>
+    <string name="messages_eliminar_cobro">¿Está seguro que desea elminar el cobro?</string>
+
+    <string name="alert_dilog_title_eliminar_pedido">Eliminar pedido</string>
+    <string name="messages_eliminar_pedido">¿Está seguro que desea elminar el pedido?</string>
+
+    <string name="elimina_registro_cobro">Cobro eliminada con éxito.</string>
+    <string name="elimina_registro_pedido">Pedido eliminada con éxito.</string>
+
+    <string name="alert_dialogo_finalizar_ruta">Finalizar Ruta</string>
+    <string name="messages_finalizar_ruta">¿Está seguro que desea finalizar la ruta?</string>
+
+    <string name="no_elimina_bonificado">Este producto es bonificado, no puede ser eliminado del pedido.</string>
+    <string name="no_abrir_bonificado">Este producto es bonificado, no puede abrirlo.</string>
+    <string name="eliminado_producto">Producto eliminado con éxito.</string>
+
+</resources>

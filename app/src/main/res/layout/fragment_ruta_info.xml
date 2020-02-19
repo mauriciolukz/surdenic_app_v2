@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context=".fragments.RutaInfoFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_main_info_ruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_header_info_ruta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pic_user"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/usuario_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="Ruben Saavedra Prado"/>
+
+                <TextView
+                    android:id="@+id/usuario_codigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="Codigo 01"/>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/card_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/usuario_ruta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:layout_marginTop="5dp"
+                        android:text="Ruta 101"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_ruta_actual_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_ruta_actual_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/card_background"
+                android:text="@string/title_info_ruta_actual"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/fecha_hora_inicio_ruta_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/fecha_hora_inicio_ruta"
+                    android:textColor="@color/card_background"/>
+
+                <TextView
+                    android:id="@+id/fecha_hora_inicio_ruta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/card_background"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/cantidad_clientes_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cantidad_clientes"/>
+
+                <TextView
+                    android:id="@+id/cantidad_clientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="34"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cantidad_facturas_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/cantidad_facturas"/>
+
+
+
+                <TextView
+                    android:id="@+id/cantidad_facturas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="34"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/periodo_trabajo_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/periodo_trabajo"/>
+
+                <TextView
+                    android:id="@+id/periodo_trabajo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold"
+                    android:textColor="@color/card_background"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tasa_cambio_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/tasa_cambio"/>
+
+                <TextView
+                    android:id="@+id/tasa_cambio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:textColor="@color/card_background"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/retencion_ir_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/retencion_ir"/>
+
+                <TextView
+                    android:id="@+id/retencion_imi_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    android:text="@string/retencion_imi"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/retencion_ir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    />
+
+                <TextView
+                    android:id="@+id/retencion_imi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/card_background"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_ruta_datos_ingresados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_ruta_datos_ingresado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/card_background"
+                android:text="@string/title_ruta_datos_ingresado"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/visitas_no_exitosas_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/visitas_no_exitosas"/>
+
+
+
+                    <TextView
+                        android:id="@+id/visitas_no_exitosas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/visitas_no_exitosas_sincronizadas_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/visitas_no_exitosas_sincro"/>
+
+                    <TextView
+                        android:id="@+id/visitas_no_exitosas_sincronizadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobros_no_exitosos_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobros_no_exitosos"/>
+
+
+
+                    <TextView
+                        android:id="@+id/cobros_no_exitosos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobros_no_exitosos_sincronizados_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobros_no_exitosos_sincro"/>
+
+                    <TextView
+                        android:id="@+id/cobros_no_exitosos_sincronizados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobros_exitosos_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobros_exitosos"/>
+
+
+
+                    <TextView
+                        android:id="@+id/cobros_exitosos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cobros_exitosos_sincronizados_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/cobros_no_exitosos_sincro"/>
+
+                    <TextView
+                        android:id="@+id/cobros_exitosos_sincronizados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="34"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pedidos_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/pedidos"/>
+
+
+                    <TextView
+                        android:id="@+id/pedidos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="0"
+                        android:textColor="@color/card_background"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pedidos_sincronizados_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="@string/pedidos_sincro"/>
+
+                    <TextView
+                        android:id="@+id/pedidos_sincronizados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/card_background"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_finalizar_ruta"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btn_finaliza_ruta"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
