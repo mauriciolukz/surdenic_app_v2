@@ -85,7 +85,8 @@ public class LoginActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
-
+        user.setText("Jblandon");
+        password.setText("e5fcc3af14a35f48d5499be8e67eb4cb");
         // Set up the login form.
 
 //        password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -119,7 +120,8 @@ public class LoginActivity extends AppCompatActivity  {
             }else{ // Autenticamos con API
                 ApiInterface apiService = ApiClient.getClient(getApplicationContext()).create(ApiInterface.class);
 
-                Call<Usuario> userCall = apiService.Login(this.user.getText().toString(), md5(this.password.getText().toString()) );
+                //Call<Usuario> userCall = apiService.Login(this.user.getText().toString(), md5(this.password.getText().toString()) );
+                Call<Usuario> userCall = apiService.Login(this.user.getText().toString(), this.password.getText().toString());
 
                 userCall.enqueue(new Callback<Usuario>() {
                     @Override

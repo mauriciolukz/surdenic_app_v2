@@ -19,7 +19,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiClient {
 
     //public static final String BASE_URL = "http://apppedidos.infodet.edu.ni/api_jerp/";
-    public static final String BASE_URL = "http://surdenic.info/api_jerp/";
+    //public static final String BASE_URL = "http://surdenic.info/api_jerp/";
+    public static final String BASE_URL = "http://mariachiaztecadeoro.com/api_surdenic_v2/";
+
     private static Retrofit retrofit = null;
 
     private static OkHttpClient getRequestHeader(Context context) {
